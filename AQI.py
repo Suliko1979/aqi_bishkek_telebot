@@ -2,9 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import lxml
 import telebot
+import os
 
 
-token = "1736982389:AAHWkX5UZbcFluMGM8MyGF87SA1fx5fpn4A"
+token = os.getenv('BOT_TOKEN')
 
 bot = telebot.TeleBot(token)
 
